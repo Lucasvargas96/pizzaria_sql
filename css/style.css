@@ -66,14 +66,16 @@ justify-content: center;
     font-weight: bold;
     padding: 20px;
     font-size: 18px;
-    background-color: rgb(193, 224, 214);
+    
 }
 .alet.alert-success{
     border:2px solid #155724;
+    background-color: rgb(141, 223, 175);
 }
 
 .alert.alert-warning{
     border:2px solid #856404;
+    background-color: rgb(223, 197, 141);
 }
 .alert p{
     margin-bottom: 0;

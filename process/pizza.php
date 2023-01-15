@@ -15,5 +15,22 @@ if($method === "GET"){
     sabores;");
     $sabores =$saboresQuery->fetchAll();
     
-} else if($method === "POST") {};
+} else if($method === "POST") {
+    $data =$_POST;
+    $borda=$data["borda"];
+    $massa=$data["massa"];
+    $sabores=$data["sabores"];
+
+    if(count($sabores) > 3) {
+        $_SESSION["msg"]= "Selecione no máximo 3 sabores";
+        $_SESSION["status"]="warning";
+
+    } else{
+        $_SESSION["msg"]= "Pedido realizado com sucesso";
+        $_SESSION["status"]="success";
+        
+    }
+    header("Location:..");
+}
+    
 ?>
