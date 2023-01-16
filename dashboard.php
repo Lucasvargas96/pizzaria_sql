@@ -1,4 +1,5 @@
 <?php include_once("templates/header.php")?>
+<?php include_once("process/orders.php")?>
     <div class="main-container">
         <div class="container">
             <div class="row">
