@@ -46,7 +46,7 @@ if($method === "GET"){
         }
         //criando o pedido da pizza
         $stmt3 =$conn->prepare("INSERT INTO pedidos (pizza_id,status_id) VALUES (:pizza,:status)");
-
+        //sempre inicia com 1 que signigica que esta produção
         $statusId=1;
 
         $stmt3->bindParam(":pizza",$pizzaId);
