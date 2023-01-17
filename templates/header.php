@@ -42,7 +42,7 @@ if(isset($_SESSION["msg"])){
          <div class="collapse navbar-collapse" id="navbarNav">
              <ul class="navbar-nav">
                  <li class="nav-item active">
-                     <a href="index.php" class="nav-link">Peça sua pizza</a>
+                     <a href="dashboard.php" class="nav-link">Peça sua pizza</a>
                  </li>
              </ul>
          </div>

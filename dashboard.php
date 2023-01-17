@@ -32,12 +32,12 @@
                                    </ul>
                               </td>
                                <td>
-                                   <form action="process/orders.php"class="form-group update-form" method="post">
+                                   <form action="process/orders.php" method="post" class="form-group update-form">
                                        <input type="hidden" name="type" value="update">
                                        <input type="hidden" name="id" value="<?= $pizza["id"]?>">
                                        <select name="status" class="form-control status-input">
                                         <?php foreach ($status as $s):?>
-                                           <option value="<?=$s["id"]?>" <?php echo ($s["id"]==$pizza["status"]) ? "select" : "" ;?>><?=$s["tipo"]?></option>
+                                           <option value="<?=$s["id"]?>" <?php echo ($s["id"]==$pizza["status"]) ? "selected" : "" ;?>><?=$s["tipo"]?></option>
                                         <?php endforeach ?>
                                        </select>
                                        <button type="submit" class="update-btn">
