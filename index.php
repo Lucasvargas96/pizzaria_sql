@@ -9,7 +9,7 @@
     <div id="main-container">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" >
                     <h2>Monte a pizza como desejar:</h2>
                     <form action="process/pizza.php" method="post" id="pizza-form"> 
                         <div class="form-group">

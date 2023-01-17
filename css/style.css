@@ -37,7 +37,19 @@ justify-content: center;
     text-align: center;
     min-height: 50%;
 }
+.main-container{
+    margin-bottom: 100px;
+    padding: 50px 0;
+    text-align: center;
+    min-height: 50%;
+}
 #main-container h2{
+    margin-bottom: 30px;
+}
+.form-group{
+padding:5px;
+}
+.main-container h2{
     margin-bottom: 30px;
 }
 .row{
@@ -56,6 +68,12 @@ justify-content: center;
 .btn.btn-primary{
     background-color: #000;
     border-color: #000;
+}
+td{
+    text-align: center;
+}
+th{
+    text-align: center;
 }
 
 /*ALERTA*/
@@ -138,4 +156,43 @@ footer{
     align-items: center;
     justify-content: center;
     font-weight: bold;
+}
+
+/* RESPONSIVO */
+@media(max-width:425px){
+    #main-banner{
+        background-position-y: 0;
+    }
+    #main-banner h1{
+        padding:10px;
+    }
+    #main-container{
+        margin-bottom: 0;
+    }
+    #main-container .container {
+        padding: 10px;
+    }
+    .form-group .btn.btn-primary{
+        width: 100%;
+        height: 50px;
+        margin-top:15px;
+        text-transform:uppercase;
+    }
+
+    .table-container{
+        padding: 0;
+    }
+    .table td, .table th{
+        padding: .5rem;
+    }
+    th span{
+        display: none;
+    }
+
+    .table thead th:nth-child(5),
+    .table thead th:nth-child(6),
+    .table tbody td:nth-child(5),
+    .table tbody td:nth-child(6){
+        display:none;
+    }
 }
